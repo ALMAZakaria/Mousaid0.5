@@ -1,8 +1,8 @@
-langchain==0.1.0
-langchain-openai==0.0.2
-fastapi==0.109.2
-uvicorn==0.27.1
-python-multipart==0.0.6
+langchain
+langchain-openai
+fastapi
+uvicorn
+python-multipart
 jsonschema
 reportlab
 google-generativeai
