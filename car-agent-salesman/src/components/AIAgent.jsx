@@ -17,7 +17,7 @@ export default function AIAgent() {
   const chatEndRef = useRef(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/greeting")
+    fetch("https://mousaid0-5.onrender.com/api/greeting")
       .then(res => res.json())
       .then(data => setGreeting(data.message))
       .catch(err => console.error("Failed to fetch greeting:", err));
@@ -52,7 +52,7 @@ export default function AIAgent() {
     setUserInput('');
     try {
       setIsLoading(true);
-      const response = await fetch('http://127.0.0.1:8000/chat', {
+      const response = await fetch('https://mousaid0-5.onrender.com/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
