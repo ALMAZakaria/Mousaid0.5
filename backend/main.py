@@ -1,15 +1,11 @@
 import os
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import JSONResponse
-from fastapi.exception_handlers import RequestValidationError
-from fastapi.exceptions import RequestValidationError
 from backend.config import settings
 from backend.db import startup, shutdown
 from backend.routes import chat, greeting
 import logging
-import asyncpg
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

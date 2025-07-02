@@ -1,11 +1,8 @@
-openai==1.12.0
-python-dotenv==1.0.0
-psycopg2-binary==2.9.9
 langchain==0.1.0
 langchain-openai==0.0.2
 fastapi==0.109.2
 uvicorn==0.27.1
-python-multipart==0.0.6 
+python-multipart==0.0.6
 jsonschema
 reportlab
 google-generativeai
@@ -14,3 +11,5 @@ asyncpg
 pydantic-settings
 alembic
 Jinja2
+python-dotenv
+psycopg2-binary
