@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: mousaid-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://postgres:xWVNrmTdBhogDqQhPeywvPDGolDUztIW@switchback.proxy.rlwy.net:29798/chatbot
+      - key: GOOGLE_API_KEY
+        value: AIzaSyAS_wJVZSeiFWWVyUC4_9WNiEriQOfm5K4
+      - key: SENDER_EMAIL
+        value: hanine.business@gmail.com
+      - key: SENDER_EMAIL_APP_PASSWORD
+        value: tuyp zptc vlpg zntw
+      - key: SMTP_PORT
+        value: "465"
