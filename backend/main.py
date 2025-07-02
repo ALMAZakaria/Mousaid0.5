@@ -14,7 +14,7 @@ app = FastAPI(title="Car Recommendation AiAgent")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "https://mousaid.vercel.app"],
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "https://mousaid.vercel.app","https://moussaid.vercel.app"],
     allow_credentials=True,
     allow_methods=["POST","GET"],
     allow_headers=["*"],
